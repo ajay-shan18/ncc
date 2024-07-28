@@ -1,0 +1,153 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-border,
+.middle-border,
+.inner-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.outer-border {
+    border: 0.2cm solid red;
+}
+
+.middle-border {
+    border: 0.2cm solid navy;
+    top: 0cm;
+    left: 0cm;
+    right: 0cm;
+    bottom: 0cm;
+}
+
+.inner-border {
+    border: 0.2cm solid rgb(22, 150, 193);
+    top: 0cm;
+    left: 0cm;
+    right: 0cm;
+    bottom: 0cm;
+}
+
+.content {
+    position: absolute;
+    top: 0.6cm;
+    left: 0.6cm;
+    right: 0.6cm;
+    bottom: 0.6cm;
+    overflow: auto;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin: 20px;
+}
+
+.left-logo {
+    position: absolute;
+    left: 0;
+}
+
+.right-logo {
+    position: absolute;
+    right: 0;
+}
+
+.college-name {
+    font-family: Cambria, serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    transition: font-size 0.5s;
+}
+
+.college-name .blue {
+    color: blue;
+}
+
+.college-name .black {
+    color: black;
+}
+
+.divider {
+    margin-top: 30px;
+    border: none;
+    height: 2px;
+    background-color: #000;
+}
+.soc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #010000;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+}
+
